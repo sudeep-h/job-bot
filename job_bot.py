@@ -12,9 +12,6 @@ GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
-from dotenv import load_dotenv
-load_dotenv()
-
 class CloudJobAutomation:
     def __init__(self):
         self.gemini_client = genai.Client(api_key=GEMINI_API_KEY)
